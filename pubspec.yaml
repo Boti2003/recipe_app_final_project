@@ -9,9 +9,14 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  get_it: ^9.2.1
+  google_fonts: ^8.1.0
+  image_picker: ^1.2.2
   isar: ^3.1.0+1
   isar_flutter_libs: ^3.1.0+1
   path_provider: ^2.1.5
+  shake: ^3.0.0
+  share_plus: ^13.1.0
 
 dev_dependencies:
   flutter_test:
@@ -22,3 +27,5 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/tags.json

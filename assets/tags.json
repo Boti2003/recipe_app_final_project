@@ -1,0 +1,10 @@
+[
+  { "name": "Main Course", "type": "mealType" },
+  { "name": "Breakfast", "type": "mealType" },
+  { "name": "Dessert", "type": "mealType" },
+  { "name": "Italian", "type": "cuisine" },
+  { "name": "Portuguese", "type": "cuisine" },
+  { "name": "Vegetarian", "type": "dietaryPreference" },
+  { "name": "Pescatarian", "type": "dietaryPreference" },
+  { "name": "Vegan", "type": "dietaryPreference" }
+]
