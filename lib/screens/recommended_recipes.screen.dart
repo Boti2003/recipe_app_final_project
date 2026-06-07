@@ -5,13 +5,12 @@ import 'package:recipe_app_final_project/models/tag.model.dart';
 import 'package:recipe_app_final_project/screens/recipe_detail.screen.dart';
 import 'package:recipe_app_final_project/services/logging.service.dart';
 import 'package:recipe_app_final_project/services/recipe.service.dart';
-import '../theme/app_colors.theme.dart'; // Módosítsd a te útvonaladra
+import '../theme/app_colors.theme.dart';
 
 class RecommendedRecipesScreen extends StatefulWidget {
   final Tag selectedCuisine;
   final Tag selectedType;
 
-  // A képernyő megnyitásakor át kell adni, hogy mit keresünk
   const RecommendedRecipesScreen({
     super.key,
     required this.selectedCuisine,

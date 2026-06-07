@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:isar/isar.dart';
-import 'package:recipe_app_final_project/dummy_seed_stuff.dart';
 import 'package:recipe_app_final_project/initialization/seed_tags.dart';
 import 'package:recipe_app_final_project/models/interaction_log.model.dart';
 import 'package:recipe_app_final_project/models/pantry_item.model.dart';

@@ -698,7 +698,6 @@ class _RecipeFormScreenState extends State<RecipeFormScreen> {
   }
 
   Future<void> _showTagSelectionDialog() async {
-    // 1. Készítünk egy ideiglenes másolatot az aktuális kijelölésekről
     List<Tag> tempSelectedTags = List.from(_selectedTags);
 
     await showDialog(

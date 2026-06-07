@@ -1,6 +1,5 @@
 import 'package:isar/isar.dart';
 import 'dart:math';
-import 'package:recipe_app_final_project/enums/tag_type.enum.dart';
 import 'package:recipe_app_final_project/models/recipe.model.dart';
 import 'package:recipe_app_final_project/models/tag.model.dart';
 import 'package:recipe_app_final_project/services/pantry.service.dart';
@@ -120,8 +119,7 @@ class RecipeService {
     Tag mealType,
   ) async {
     final allRecipes = await isar.recipes.where().findAll();
-    final pantryItems = await pantryService
-        .getAllPantryItem(); // vagy isar.pantryItems...
+    final pantryItems = await pantryService.getAllPantryItem();
 
     List<RecommendedRecipe> results = [];
 
@@ -187,12 +185,6 @@ class RecipeService {
         recipe.tags.add(tag);
       }
       await recipe.tags.save();
-
-      // 3. Logolás a tesztekhez
-      /*await isar.interactionLogs.put(InteractionLog()
-        ..timestamp = DateTime.now()
-        ..actionType = 'Action'
-        ..target = 'Save_Recipe');*/
     });
   }
 }
